@@ -18,16 +18,16 @@
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:pl-[3%]" id="navbar-sticky">
           <ul id="card-nav-sticky" class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-semi-purple  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
             <li>
-              <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 sm:hover:text-blue-950 text-white transition duration-300 ease-in-out">Home</a>
+              <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 sm:hover:text-blue-950 md:hover:text-white text-white transition duration-300 ease-in-out">Home</a>
             </li>
               <li>
-                  <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 sm:hover:text-blue-950 text-white transition duration-300 ease-in-out">About</a>
+                  <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 sm:hover:text-blue-950 md:hover:text-white text-white transition duration-300 ease-in-out">About</a>
               </li>
               <li>
-                  <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 text-white  sm:hover:text-blue-950 transition duration-300 ease-in-out ">Learning Path</a>
+                  <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 text-white  sm:hover:text-blue-950  md:hover:text-white transition duration-300 ease-in-out ">Learning Path</a>
               </li>
               <li>
-                  <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 text-white  sm:hover:text-blue-950  transition duration-300 ease-in-out">Contact Us</a>
+                  <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 text-white  sm:hover:text-blue-950 md:hover:text-white  transition duration-300 ease-in-out">Contact Us</a>
               </li>
           </ul>
       </div>
