@@ -1,0 +1,25 @@
+.navbar-transition {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-semi-purple {
+    background-color: rgba(255, 255, 255, 0.1); 
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.blur{
+    backdrop-filter: blur(10px);
+}
+
+
+html {
+    scrollbar-color: rgb(32, 52, 105) #e0e0e0;
+    scrollbar-width: thin;
+    
+  }
+
