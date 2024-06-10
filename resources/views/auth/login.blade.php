@@ -7,60 +7,67 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <style>
         .bg-custom {
-            background: linear-gradient(0deg, rgba(23,23,78,1) 0%, rgba(33,33,99,1) 100%);
+            background-image: url('img/landing-image.png');
+            background-size: cover;
+            background-position: center;
         }
-        .or-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 83.333333%; /* 5/6 width */
-            margin: 0 auto;
+        
+       
+        .bg-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px); 
         }
-        .or-container hr {
-            flex: 1;
-            border: none;
-            height: 1px;
-            background-color: #e2e8f0;
+
+      
+        .text-light {
+            color: white;
         }
-        .or-container span {
-            margin: 0 10px;
-            color: #000000;
-        }
+
     </style>
 </head>
 <body class="bg-custom">
-    <div class="flex flex-col min-h-screen">
-        <div class="flex flex-col mx-auto w-full max-w-md mt-20 bg-white p-8 rounded-lg shadow-lg">
-            <div class="text-center mb-10">
-                <h1 class="text-3xl font-bold text-gray-800">Welcome back to <span class="text-red-500">Learnify</span></h1>
-            </div>
-            <form action="" class="text-center flex flex-col gap-4">
-                <div class="mb-1 w-full flex flex-col items-center">
-                    <input type="email" id="email" name="email" class="form-input w-5/6 mt-1 border rounded-md shadow-sm py-2 px-4 bg-gray-200 text-gray-700 border-black" placeholder="Email address" required autofocus>
+    
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+            <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 text-light">
+                <img class="w-10 h-10 mr-2" src="img/logo.png" alt="logo">
+                Learnify   
+            </a>
+            <div class="w-full bg-card rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl text-light">
+                        Sign in to your account
+                    </h1>
+                    <form class="space-y-4 md:space-y-6" action="#">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 text-light">Your email</label>
+                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 text-light" placeholder="name@company.com" required="">
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 text-light">Password</label>
+                            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 text-light" required="">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                  <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 text-light" required="">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                  <label for="remember" class="text-gray-500 text-light">Remember me</label>
+                                </div>
+                            </div>
+                            <a href="#" class="text-sm font-medium text-primary-600 hover:underline text-light">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-blue-700">Sign in</button>
+                        <p class="text-sm font-light text-gray-500 text-light">
+                            Don’t have an account yet? <a href="/register" class="font-medium text-primary-600 hover:underline text-light">Sign up</a>
+                        </p>
+                        <p class="text-sm font-light text-gray-500 text-light">
+                            <a href="/" class="font-medium text-primary-600 hover:underline text-light">Back</a>
+                        </p>
+                    </form>
                 </div>
-                <div class="mb-1 w-full flex flex-col items-center">
-                    <input type="password" id="password" name="password" class="form-input w-5/6 mt-1 border rounded-md shadow-sm py-2 px-4 bg-gray-200 text-gray-700 border-black" placeholder="Password" required>
-                </div>
-                <div class="mb-0 w-5/6 flex justify-end">
-                    <a href="#" class="text-sm text-red-500 hover:text-red-700">Forgot your password?</a>
-                </div>
-                <div class="text-left mb-0 w-5/6 flex items-center">
-                    <input type="checkbox" id="remember_me" name="remember" class="text-gray-400 mr-2">
-                    <label for="remember_me" class="text-gray-700">Remember this account</label>
-                </div>
-                <div class="text-center mb-4">
-                    <button type="submit" class="w-5/6 bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-md shadow-sm">Sign In</button>
-                </div>
-            </form>
-            <div class="text-center mt-2 or-container">
-                <hr>
-                <span>or sign in with</span>
-                <hr>
-            </div>
-            <div class="text-center mt-2">
-                <a href="#" class="inline-block w-5/6 text-center px-4 py-2 rounded-md bg-white text-black hover:bg-gray-100 border border-black mt-2">Google</a>
             </div>
         </div>
-    </div>
+
 </body>
 </html>
