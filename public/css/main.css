@@ -20,7 +20,7 @@
 html {
     scrollbar-color: rgb(32, 52, 105) #e0e0e0;
     scrollbar-width: thin;
-    
+    scroll-behavior: smooth;
   }
 
   .carousel {
@@ -76,6 +76,7 @@ html {
     object-fit: cover;
     border: 4px solid #fff;
   }
+  
   @media screen and (max-width: 900px) {
     .carousel {
       grid-auto-columns: calc((100% / 2) - 9px);
@@ -86,3 +87,29 @@ html {
       grid-auto-columns: 100%;
     }
   }
+
+  .card {
+  position: relative;
+
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
+}
+
+.glass-bg {
+  background: rgba(255, 255, 255, 0.25); /* Transparansi */
+  backdrop-filter: blur(10px); /* Efek blur */
+  -webkit-backdrop-filter: blur(10px); /* Efek blur untuk browser berbasis WebKit */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Border */
+  border-radius: 10px; /* Border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+

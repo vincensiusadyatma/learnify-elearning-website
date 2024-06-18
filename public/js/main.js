@@ -11,6 +11,10 @@
             navbar_sticky.classList.add('bg-semi-purple')
         }
     });
+
+
+
+    // learning apth card slider
     const wrapper = document.querySelector(".wrapper");
     const carousel = document.querySelector(".carousel");
     const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -82,3 +86,28 @@
     carousel.addEventListener("scroll", infiniteScroll);
     wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
     wrapper.addEventListener("mouseleave", autoPlay);
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.question-btn');
+    
+        buttons.forEach(button => {
+          button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-toggle');
+            const target = document.getElementById(targetId);
+            const isExpanded = target.style.display === 'block';
+    
+            if (isExpanded) {
+              target.style.display = 'none';
+              this.querySelector('svg').classList.remove('rotate-180');
+            } else {
+              target.style.display = 'block';
+              this.querySelector('svg').classList.add('rotate-180');
+            }
+          });
+        });
+      });

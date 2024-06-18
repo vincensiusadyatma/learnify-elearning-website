@@ -21,13 +21,13 @@
               <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 sm:hover:text-blue-950 md:hover:text-white text-white transition duration-300 ease-in-out">Home</a>
             </li>
               <li>
-                  <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 sm:hover:text-blue-950 md:hover:text-white text-white transition duration-300 ease-in-out">About</a>
+                  <a href="#about" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 sm:hover:text-blue-950 md:hover:text-white text-white transition duration-300 ease-in-out">About</a>
               </li>
               <li>
-                  <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 text-white  sm:hover:text-blue-950  md:hover:text-white transition duration-300 ease-in-out ">Learning Path</a>
+                  <a href="#learning-path" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 text-white  sm:hover:text-blue-950  md:hover:text-white transition duration-300 ease-in-out ">Learning Path</a>
               </li>
               <li>
-                  <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 text-white  sm:hover:text-blue-950 md:hover:text-white  transition duration-300 ease-in-out">Contact Us</a>
+                  <a href="#question" class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-gray-700 md:p-3 text-white  sm:hover:text-blue-950 md:hover:text-white  transition duration-300 ease-in-out">Question</a>
               </li>
           </ul>
       </div>
