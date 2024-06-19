@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Core\CourseController;
+
 
 // default url
 Route::get('/', function () {
@@ -24,16 +26,18 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 // Route group untuk Admin
 Route::middleware(['auth', 'checkRole:admin'])->group(function () {
     Route::get('/admin/dashboard', function () {
-        return view('dashboard.dashboard-admin');
+        return view('admin.dashboard-admin');
     });
-
-    
 });
 
 // Route group untuk User
 Route::middleware(['auth', 'checkRole:user'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard.dashboard');
+    });
+    Route::get('/dashboard/course',[CourseController::class, 'index']);
+    Route::get('/dashboard/profile', function () {
+        return view('dashboard.profile');
     });
 
     
