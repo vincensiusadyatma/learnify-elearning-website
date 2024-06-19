@@ -10,7 +10,7 @@
 <body class="flex h-screen">
     @include('component.sidebar')
 
-    <div class="flex-grow">
+    <div class="flex-grow ml-72">
         @yield('content')
     </div>
 
