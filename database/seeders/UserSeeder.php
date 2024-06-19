@@ -21,7 +21,14 @@ class UserSeeder extends Seeder
                 'phone_number'   => '0814-7667-2423',
                 'password'  => Hash::make('vito123'),
                 'role_id' => 1
-           ]
+           ],
+           [
+            'username'=> 'Nicolaus',
+            'email' => "nicolaus@gmail.com",
+            'phone_number'   => '0814-7667-2423',
+            'password'  => Hash::make('nico123'),
+            'role_id' => 2
+       ]
         ]);
     }
 }

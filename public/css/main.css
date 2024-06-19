@@ -105,11 +105,11 @@ html {
 }
 
 .glass-bg {
-  background: rgba(255, 255, 255, 0.25); /* Transparansi */
-  backdrop-filter: blur(10px); /* Efek blur */
-  -webkit-backdrop-filter: blur(10px); /* Efek blur untuk browser berbasis WebKit */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Border */
-  border-radius: 10px; /* Border radius */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+  background: rgba(255, 255, 255, 0.25); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
