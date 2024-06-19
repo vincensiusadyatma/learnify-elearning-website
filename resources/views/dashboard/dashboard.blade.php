@@ -1,30 +1,29 @@
 @extends('template.dashboard')
 
 @section('content')
-    <div class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
-        <!--start: header-->
-        <header class="sticky top-0 z-999 flex w-full bg-white drop-shadow-lg dark:bg-boxdark dark:drop-shadow-none">
-            <div class="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
-                <div class="hidden sm:block">
-                    <h1 class="font-medium text-2xl">Welcome back, {{ auth()->user()->username ?? 'User' }}</h1>
-                </div>
-                <div class="flex items-center gap-3 2xsm:gap-7">
-                    <ul class="flex items-center 2xsm:gap-4">
-                        <!--bell icon area-->
-                        <li></li>
-                    </ul>
-                    <!--user area-->
-                    <div class="relative">
-                        <a class="flex items-center gap-4" href="profile.html">
-                            <span class="hidden text-right lg:block">
-                                <span class="block text-sm font-medium text-black dark:text-white">Nate</span>
-                                <span class="block text-xs font-medium">UX Designer</span>
-                            </span>
-                            <span class="h-12 w-12 rounded border-2">
-                                <img src="img/profile.jpg" alt="user photo profile">
-                            </span>
-                        </a>
-                    </div>
+<div class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
+    <!--start: header-->
+    <header class="sticky top-0 z-999 flex w-full bg-white drop-shadow-lg dark:bg-boxdark dark:drop-shadow-none">
+        <div class="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
+            <div class="hidden sm:block">
+                <h1 class="font-medium text-2xl">Welcome back, Nate</h1>
+            </div>
+            <div class="flex items-center gap-3 2xsm:gap-7">
+                <ul class="flex items-center 2xsm:gap-4">
+                    <!--bell icon area-->
+                    <li></li>
+                </ul>
+                <!--user area-->
+                <div class="relative">
+                    <a class="flex items-center gap-4" href="profile.html">
+                        <span class="hidden text-right lg:block">
+                            <span class="block text-sm font-medium text-black dark:text-white">Nate</span>
+                            <span class="block text-xs font-medium">UX Designer</span>
+                        </span>
+                        <span class="h-12 w-12 rounded border-2">
+                            <img src="img/profile.jpg" alt="user photo profile">
+                        </span>
+                    </a>
                 </div>
             </div>
         </header>
