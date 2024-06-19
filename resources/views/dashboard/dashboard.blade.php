@@ -30,7 +30,8 @@
         </header>
         <!--end: header-->
         <!--start: main-->
-        <main class="" <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
+        <main>
+        <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
             <!--start: card container-->
             <div class="mt-4 grid grid-cols-12 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-5 2xl:gap-7.55">
 
@@ -93,7 +94,7 @@
 
                 <!--start: my path-->
                 <div
-                    class="h-80 rounded-sm border rounded-md stroke bg-white p-6 shadow-default dark:border-strokedark dark:bg-boxdark">
+                    class="h-80  border rounded-md stroke bg-white p-6 shadow-default dark:border-strokedark dark:bg-boxdark">
                     <!--start: tab menu area-->
 
                     <!--
