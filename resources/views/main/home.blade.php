@@ -54,9 +54,9 @@
 <section class="bg-gray-800" id="about">
   <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6" data-aos="fade-right">
       <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Tentang Kami</h2>
-          <p class="mb-4">Learnify menyediakan akses pendidikan berkualitas tinggi bagi semua orang, di mana saja. Dengan berbagai kursus yang dirancang oleh para ahli di bidangnya, kami menawarkan pengalaman belajar yang interaktif dan komprehensif. </p>
-          <p>Misi kami adalah memberdayakan individu melalui pengetahuan dan keterampilan yang dapat meningkatkan karir dan kehidupan pribadi mereka. Kami percaya bahwa belajar adalah hak semua orang dan kami berkomitmen untuk menciptakan lingkungan belajar yang inklusif dan mendukung.</p>
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-white">Tentang Kami</h2>
+          <p class="mb-4 text-white">Learnify menyediakan akses pendidikan berkualitas tinggi bagi semua orang, di mana saja. Dengan berbagai kursus yang dirancang oleh para ahli di bidangnya, kami menawarkan pengalaman belajar yang interaktif dan komprehensif. </p>
+          <p class="mb-4 text-white">Misi kami adalah memberdayakan individu melalui pengetahuan dan keterampilan yang dapat meningkatkan karir dan kehidupan pribadi mereka. Kami percaya bahwa belajar adalah hak semua orang dan kami berkomitmen untuk menciptakan lingkungan belajar yang inklusif dan mendukung.</p>
       </div>
       <div class="grid grid-cols-2 gap-4 mt-8">
           <img style=" filter: grayscale(100%)" class="w-full rounded-lg" src="img/foto-about-landing5.jpg" alt="office content 1"data-aos="fade-down">
@@ -179,7 +179,7 @@
 {{-- akhir learning path section --}}
 
 {{-- FAQ Section --}}
-<div id="question" class="h-screen bg-gradient-to-t from-gray-800 to-slate-900">
+<div id="question" class="h-screen bg-gradient-to-t from-gray-500 to-slate-900">
   <section class="max-w-5xl mx-auto py-10 sm:py-20">
     <div class="flex items-center justify-center flex-col gap-y-2 py-5" data-aos="fade-up">
       <h1 class="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider text-lg">
@@ -235,13 +235,9 @@
       </div>
     </div>
   </section>
-</div>
-{{-- End FAQ Section --}}
 
-
-
-{{-- closing section --}}
-<section id="closing" class="bg-gray-800 text-white mb-10 pb-36">
+  {{-- closing section --}}
+<section id="closing" class="text-white">
   <div class="container mx-auto text-center" data-aos="zoom-in-up">
       <h2 class="text-3xl font-bold mb-4">Mari Mulai Langkahmu Demi Masa Depanmu</h2>
       <p class="text-lg mb-8">Mulailah belajar di learnify demi masa depanmu yang lebih cerah untuk kedepanya</p>
@@ -249,4 +245,10 @@
   </div>
 </section>
 {{-- end closing section --}}
+</div>
+{{-- End FAQ Section --}}
+
+
+
+
 @endsection
