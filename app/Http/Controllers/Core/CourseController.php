@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\Course;
+namespace App\Http\Controllers\Core;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use App\Models\Course;
+
 
 class CourseController extends Controller
 {
@@ -12,7 +14,11 @@ class CourseController extends Controller
      */
     public function index()
     {
-        //
+        // Retrieve all courses
+        $courses = Course::getAllCourses();
+
+    
+        return view('dashboard.course', ['courses' => $courses]);
     }
 
     /**

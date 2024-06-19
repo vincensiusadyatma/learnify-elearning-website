@@ -14,7 +14,13 @@ class Course extends Model
         'course_name',
         'course_category',
         'description',
+        'img_path'
     ];
 
     use HasFactory;
+
+    public static function getAllCourses()
+    {
+        return self::all();
+    }
 }
