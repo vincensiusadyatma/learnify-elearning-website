@@ -70,5 +70,7 @@
             </div>
         </div>
 
+        <x-notify::notify />
+        @notifyJs
 </body>
 </html>

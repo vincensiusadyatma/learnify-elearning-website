@@ -13,5 +13,8 @@
     <div class="flex-grow">
         @yield('content')
     </div>
+
+    <x-notify::notify />
+    @notifyJs
 </body>
 </html>

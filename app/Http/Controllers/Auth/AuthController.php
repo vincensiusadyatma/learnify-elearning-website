@@ -12,6 +12,7 @@ class AuthController extends Controller
 {
     public function showLoginForm()
     {
+      
         return view('auth.login');
     }
 
@@ -33,13 +34,16 @@ class AuthController extends Controller
             // Check the role of the user and redirect accordingly
             $user = Auth::user();
             if ($user->role->name === 'admin') {
+                notify()->success('Login Sucesfully');
                 return redirect('/admin/dashboard');
             } elseif ($user->role->name === 'user') {
+                notify()->success('Login Sucesfully');
                 return redirect('/dashboard');
             }
         }
 
         // Jika otentikasi gagal, arahkan pengguna kembali ke halaman login dengan pesan kesalahan
+        notify()->error('Login Failed');
         return redirect('/login')->with('error', 'Invalid credentials, please try again.');
     }
 
@@ -69,8 +73,10 @@ class AuthController extends Controller
 
         // Redirect the user based on their role
         if ($user->role->name === 'admin') {
+            notify()->success('Register Sucesfully');
             return redirect('/admin/dashboard');
         } elseif ($user->role->name === 'user') {
+            notify()->success('Register Sucesfully');
             return redirect('/dashboard');
         }
 
@@ -83,6 +89,7 @@ class AuthController extends Controller
         Auth::logout(); // Lakukan proses logout pengguna
 
         // Redirect pengguna ke halaman login dengan pesan sukses
+        notify()->success('Logout Sucesfully');
         return redirect('/login')->with('success', 'You have been logged out.');
     }
 }

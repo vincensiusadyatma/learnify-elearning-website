@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\AuthController;
 
 // default url
 Route::get('/', function () {
+    
     return view('main.home');
 });
 
