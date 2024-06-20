@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Core\LessonController;
 use App\Http\Controllers\Auth\AuthController;
-use App\Http\Controllers\Core\EnrollmentController;
 use App\Http\Controllers\Core\CourseController;
 use App\Http\Controllers\Core\DashboardController;
+use App\Http\Controllers\Core\EnrollmentController;
 
 // default url
 Route::get('/', function () {
@@ -39,5 +40,7 @@ Route::middleware(['auth', 'checkRole:user'])->group(function () {
     Route::get('/enrollments/{course}', [EnrollmentController::class, 'enroll'])->name('enrollments.enroll');
     Route::get('/dashboard/your-course', [CourseController::class, 'myCourses'])->name('my-courses');
 
-    
+    Route::get('dashboard/courses/{course}/lessons', [LessonController::class, 'showByCourse'])->name('courses.lessons');
+    Route::get('/dashboard/courses/{course}/lessons/{lesson}', [LessonController::class, 'show'])->name('courses.lessons.show');
+
 });

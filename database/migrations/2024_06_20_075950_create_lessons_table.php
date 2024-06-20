@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('lessons', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('lesson_content')->nullable();
+            $table->unsignedBigInteger('course_id');
             $table->timestamps();
+
+            // Define foreign key constraint
+            $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
         });
     }
 

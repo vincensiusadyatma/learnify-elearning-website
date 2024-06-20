@@ -106,10 +106,10 @@
                                             <img src="{{ $course->img_path }}" alt="{{ $course->title }}"
                                                 class="w-full mb-4 h-1/2">
                                             <p class="text-gray-500 mb-4 mx-5">{{ $course->short_description }}</p>
-                                            <a href=""
+                                            <a href="{{ route('courses.lessons', $course->id) }}"
                                                 class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">View
-                                                Course</a>
-                                            {{-- <a href="{{ route('courses.show', $course->id) }}" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">View Course</a> --}}
+                                                Lesson</a>
+                                          
                                         </div>
                                     </div>
                                 </div>
