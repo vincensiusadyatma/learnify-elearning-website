@@ -5,7 +5,7 @@
         <h1 class="font-bold text-3xl py-4">My Courses</h1>
         <!-- Call to Action Button -->
         <div class="flex justify-end mb-4 px-10">
-            <a href="/courses"
+            <a href="/dashboard/course"
                 class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition duration-150">
                 Explore New Courses
             </a>
@@ -56,7 +56,7 @@
                                 {{ $course->course_name }}</h5>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ $course->short_description }}
                             </p>
-
+                            <a href="{{ route('courses.lessons', $course->id) }}" class="block w-full text-center py-2 px-4 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-200 mt-4">View Lessons</a>
                         </div>
                     </div>
                 @endforeach
