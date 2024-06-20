@@ -26,14 +26,14 @@ class CourseController extends Controller
     {
         // Mendapatkan kursus yang diambil oleh pengguna yang sedang diautentikasi
         $user = Auth::user();
-        
+
         $enrollments = Enrollment::where('user_id', $user->id)->with('course')->get();
         $courses = $enrollments->map(function ($enrollment) {
             return $enrollment->course;
         });
 
         // Mengembalikan tampilan dengan data kursus
-        return view('dashboard.yourCourse', compact('courses'));
+        return view('dashboard.myCourse', compact('courses'));
     }
 
     /**
