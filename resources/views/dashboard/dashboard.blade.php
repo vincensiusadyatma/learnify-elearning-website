@@ -6,7 +6,7 @@
     <header class="sticky top-0 z-999 flex w-full bg-white drop-shadow-lg dark:bg-boxdark dark:drop-shadow-none">
         <div class="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
             <div class="hidden sm:block">
-                <h1 class="font-medium text-2xl">Welcome back, Nate</h1>
+                <h1 class="font-medium text-2xl">Welcome back,{{ auth()->user()->username ?? 'User' }}</h1>
             </div>
             <div class="flex items-center gap-3 2xsm:gap-7">
                 <ul class="flex items-center 2xsm:gap-4">

@@ -21,7 +21,7 @@
               </div>
               <div>
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Follow us</h2>
-                  <ul class="text-gray-500 text-gray-400 font-medium">
+                  <ul class=" text-gray-400 font-medium">
                       <li class="mb-4">
                           <a href="https://github.com/vincensiusadyatma/learnify-elearning-website" class="hover:underline ">Github</a>
                       </li>
@@ -32,7 +32,7 @@
               </div>
               <div>
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Legal</h2>
-                  <ul class="text-gray-500 text-gray-400 font-medium">
+                  <ul class=" text-gray-400 font-medium">
                       <li class="mb-4">
                           <a href="#" class="hover:underline">Privacy Policy</a>
                       </li>

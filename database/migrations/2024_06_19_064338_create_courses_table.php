@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('course_name')->unique();
             $table->string('course_category');
             $table->text('description');
+            $table->text('short_description');
             $table->text('img_path');
             $table->timestamps();
         });

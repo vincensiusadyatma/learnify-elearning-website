@@ -13,6 +13,12 @@
             </li>
             <li>
                 <a href="/dashboard/course" class="flex items-center gap-2.5 px-4 py-2 text-white hover:bg-gray-700">
+                    <img src="/img/list-course.svg" alt="course image" class="w-[20%]">
+                    <span class="text-white">Your Course</span>
+                </a>
+            </li>
+            <li>
+                <a href="/dashboard/course" class="flex items-center gap-2.5 px-4 py-2 text-white hover:bg-gray-700">
                     <img src="/img/course2.png" alt="course image" class="w-[20%]">
                     <span class="text-white">Course</span>
                 </a>

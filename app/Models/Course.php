@@ -14,6 +14,7 @@ class Course extends Model
         'course_name',
         'course_category',
         'description',
+        'short_description',
         'img_path'
     ];
 
