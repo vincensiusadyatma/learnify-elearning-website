@@ -27,28 +27,28 @@ class CourseSeeder extends Seeder
                 'course_category' => "Basic Programming",
                 'description'   => 'This course provides an introduction to Java programming, covering fundamental concepts such as variables, control structures, object-oriented programming, and basic data structures. Students will learn to write, compile, and execute Java programs, and develop problem-solving skills essential for software development. Ideal for beginners, this course lays the groundwork for advanced programming techniques and applications.',   
                 'short_description' => 'This course provides an introduction to Java programming,  covering fundamental concepts',
-                'img_path' => "/img/course/java-logo.svg" 
+                'img_path' => "/img/course/python-logo.svg" 
            ],   
            [
             'course_name'=> 'Javascript Programming',
             'course_category' => "Basic Programming",
             'description'   => 'This course provides an introduction to Java programming, covering fundamental concepts such as variables, control structures, object-oriented programming, and basic data structures. Students will learn to write, compile, and execute Java programs, and develop problem-solving skills essential for software development. Ideal for beginners, this course lays the groundwork for advanced programming techniques and applications.',   
             'short_description' => 'This course provides an introduction to Java programming,  covering fundamental concepts',
-            'img_path' => "/img/course/java-logo.svg" 
+            'img_path' => "/img/course/javascript-logo.png" 
             ],
             [
                 'course_name'=> 'PHP Programming',
                 'course_category' => "Basic Programming",
                 'description'   => 'This course provides an introduction to Java programming, covering fundamental concepts such as variables, control structures, object-oriented programming, and basic data structures. Students will learn to write, compile, and execute Java programs, and develop problem-solving skills essential for software development. Ideal for beginners, this course lays the groundwork for advanced programming techniques and applications.',  
                 'short_description' => 'This course provides an introduction to Java programming,  covering fundamental concepts',
-                'img_path' => "/img/course/java-logo.svg"  
+                'img_path' => "/img/course/php-logo.png"  
            ],
            [
             'course_name'=> 'HTML Basic',
             'course_category' => "Web Programming",
             'description'   => 'This course provides an introduction to Java programming, covering fundamental concepts such as variables, control structures, object-oriented programming, and basic data structures. Students will learn to write, compile, and execute Java programs, and develop problem-solving skills essential for software development. Ideal for beginners, this course lays the groundwork for advanced programming techniques and applications.',   
             'short_description' => 'This course provides an introduction to Java programming,  covering fundamental concepts',
-            'img_path' => "/img/course/java-logo.svg" 
+            'img_path' => "/img/course/html-logo.svg" 
        ],
             
           

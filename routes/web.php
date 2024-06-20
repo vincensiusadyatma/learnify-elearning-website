@@ -2,12 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Core\EnrollmentController;
 use App\Http\Controllers\Core\CourseController;
-
+use App\Http\Controllers\Core\DashboardController;
 
 // default url
 Route::get('/', function () {
-    
     return view('main.home');
 });
 
@@ -32,13 +32,12 @@ Route::middleware(['auth', 'checkRole:admin'])->group(function () {
 
 // Route group untuk User
 Route::middleware(['auth', 'checkRole:user'])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard.dashboard');
-    });
+    Route::get('/dashboard',[DashboardController::class,'show_dashboard']);
     Route::get('/dashboard/course',[CourseController::class, 'index']);
-    Route::get('/dashboard/profile', function () {
-        return view('dashboard.profile');
-    });
+    Route::get('/dashboard/profile',[DashboardController::class,'show_profile']);
+
+    Route::get('/enrollments/{course}', [EnrollmentController::class, 'enroll'])->name('enrollments.enroll');
+    Route::get('/dashboard/your-course', [CourseController::class, 'myCourses'])->name('my-courses');
 
     
 });
